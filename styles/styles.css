@@ -363,26 +363,6 @@ small {
 
 /*SOBRE NOSOTROS*/
 
-.sn-caja{
-    display: none;
-}
-
-.sn-caja__texto1{
-    display: none;
-}
-
-.sn-caja__texto2{
-    display: none;
-}
-
-.sn-caja:hover .sn-caja__texto1{
-    display: none;
-}
-
-.sn-caja:hover .sn-caja__texto2{
-    display: none;
-}
-
 .sobre_nosotros {
     width: 100vw;
     height: 100vh;
@@ -1135,45 +1115,6 @@ textarea {
         overflow-x: hidden;
     }
 
-    .sn-caja{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 150px;
-        height: 150px;
-        border-radius:100%;
-        text-align: center;
-        color: black;
-        transform:translate(30px,40px);
-        margin: 0;
-        padding: 0;
-        background-color: #0f01a8ba;
-        position: absolute;
-        color: #fff;
-        font-family:fantasy;
-    }
-
-    .sn-caja__texto1{
-        display: flex;
-    }
-
-    .sn-caja__texto2{
-        display: none;
-    }
-
-    .sn-caja:hover{
-        border-radius: 10%;
-        width:400px;
-        transition: all 0.7s;
-    }
-
-    .sn-caja:hover .sn-caja__texto1{
-        display: none;
-    }
-
-    .sn-caja:hover .sn-caja__texto2{
-        display: flex;
-    }
 
     .sobre_nosotros h2,
     h3 {
