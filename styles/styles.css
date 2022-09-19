@@ -1,0 +1,1300 @@
+/*DISEÑO MOBILE*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    box-sizing:border-box;
+}
+
+body {
+    background-image: radial-gradient(#92A6F0, #000000e5);
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-size: 0.6rem;
+}
+
+.index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 14vh auto auto auto;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    background-image: radial-gradient(#0f01a8ba, #000000e9);
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 12vh;
+}
+
+.header img {
+    width: 25vw;
+    height: 10vh;
+}
+
+.barBus {
+    display: none;
+}
+
+.barNav {
+    display: inline-block
+}
+
+.barNav li {
+    list-style: none;
+    font-size: 0.6rem;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.barNav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.slider {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 30vh;
+    margin-top: 4vh;
+}
+
+.slider img {
+    height: 30vh;
+    width: 100vw;
+    margin-top: 2vh;
+}
+
+.mas-paquetes {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 68vh;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.mas-paquetes__img {
+    display: flex;
+    margin-top: 5px;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mas-paquetes img {
+    width: 100vw;
+    height: 20vh;
+    margin-top: 2px;
+}
+
+.footer {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    background-image: radial-gradient(#0f01a8ba, #000000e9);
+    width: 100vw;
+    height: 16vh;
+    font-size: 0.6rem;
+}
+
+.pieDePagina {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.redes__img {
+    margin-top: 1vh;
+}
+
+.redes img {
+    width: 3vw;
+    height: 2vh;
+}
+
+.institucional {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.institucional a {
+    margin-top: 0.3vh;
+    color: #fff;
+    text-decoration: none;
+}
+
+.institucional__opc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.4vh;
+    font-size: 0.5rem;
+}
+
+.mediosDePagos {
+    display: none;
+}
+
+.mediosDePagos img {
+    width: 2vw;
+    height: 3vh;
+}
+
+.recibirOfertas {
+    margin-top: 0.3vh;
+    display: flex;
+    width: 30vw;
+    flex-wrap: wrap;
+    font-size: 0.5rem;
+}
+
+.recibirOfertas input {
+    height: 1.5vh;
+    width: 30vw;
+}
+
+.recibirOfertas button {
+    height: 2vh;
+    cursor: pointer;
+    font-size: 0.5rem;
+    background-color: #92A6F0;
+    border: #92A6F0;
+    color: #ffffff;
+}
+
+small {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.4rem;
+    text-align: center;
+}
+
+/*PAQUETES*/
+.paquetes {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.6rem;
+}
+
+.header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.nav {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    width: 25vw;
+    height: 170vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(#0f01a8ba, #000000e9);
+}
+
+.nav h3 {
+    margin-top: 2vh;
+}
+
+.nav a li {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    padding-top: 2vh;
+    transition: all;
+}
+
+.pagPaquetes {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    height: 170vh;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pagPaquetes img {
+    width: 60vw;
+    height: 30vh;
+    transition: all 0.5s;
+}
+
+.footer {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    font-size: 0.6rem;
+}
+
+/*PAQUETE BARILOCHE*/
+.paquete-bariloche {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+}
+
+.paquete-bariloche img {
+    height: 40vh;
+    width: 60vw;
+    text-align: center;
+}
+
+.paquete-bariloche__imagen {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.paquete-bariloche__datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+/*PAQUETE IGUAZÚ*/
+.paquete-iguazu {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+}
+
+.paquete-iguazu img {
+    height: 40vh;
+    width: 60vw;
+    text-align: center;
+}
+
+.paquete-iguazu__imagen {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.paquete-iguazu__datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+/*PAQUETE USHUAIA*/
+.paquete-ushuaia {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+}
+
+.paquete-ushuaia img {
+    height: 35vh;
+    width: 70vw;
+    text-align: center;
+}
+
+.paquete-ushuaia__imagen {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.paquete-ushuaia__datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+/*PAQUETE VILLA LA ANGOSTURA*/
+.paquete-vlangostura {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+}
+
+.paquete-vlangostura img {
+    height: 35vh;
+    width: 70vw;
+    text-align: center;
+}
+
+.paquete-vlangostura__imagen {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.paquete-vlangostura__datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+/*SOBRE NOSOTROS*/
+
+.sn-caja{
+    display: none;
+}
+
+.sn-caja__texto1{
+    display: none;
+}
+
+.sn-caja__texto2{
+    display: none;
+}
+
+.sn-caja:hover .sn-caja__texto1{
+    display: none;
+}
+
+.sn-caja:hover .sn-caja__texto2{
+    display: none;
+}
+
+.sobre_nosotros {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre_nosotros h2,
+h3 {
+    margin-bottom: 2vh;
+}
+
+.sobre_nosotros p {
+    margin-bottom: 2vh;
+}
+
+.sobre_nosotros__img {
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    height: 22vh;
+}
+
+.sobre_nosotros__img img {
+    width: 40vw;
+    height: 20vh;
+}
+
+/*AGENCIAS*/
+.agencias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-top: 2vh;
+}
+
+.agencias iframe {
+    text-align: center;
+    height: 40vh;
+    width: 80vw;
+    margin-top: 2vh;
+}
+
+.agencias__palermo {
+    margin-top: 2vh;
+}
+
+/*CONTACTO*/
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    margin-top: 4vh;
+    align-items: left;
+}
+
+.formulario h2 {
+    margin-left: 2vh;
+}
+
+.formulario__datos {
+    display: row;
+    flex-wrap: wrap;
+    width: 30vw;
+    padding: 3vw;
+}
+
+.formulario__datos input,
+textarea {
+    margin-top: 1vh;
+    width: 40vw;
+}
+
+textarea {
+    height: 40vh;
+}
+
+/*TRABAJA CON NOSOTROS*/
+.trabaja-con-nostoros {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo__pagina {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.logo__pagina img {
+    width: 40vw;
+    height: 20vh;
+    margin-bottom: 2vh;
+}
+
+.cargar_datos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100vw;
+}
+
+.cargar_datos input {
+    margin-top: 0.6vh;
+    font-size: 0.6rem;
+    width: 40vw;
+}
+
+/*PREGUNTAS FRECUENTES*/
+.preguntas-frecuentes {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    align-items: center;
+}
+
+.preguntas-frecuentes img {
+    width: 35vw;
+    height: 25vh;
+    margin-bottom: 2vh;
+}
+
+.preguntas-frecuentes h4 {
+    margin-bottom: 1.5vh;
+}
+
+.preguntas-frecuentes p {
+    margin-bottom: 2.5vh;
+}
+
+/*DISEÑO MOBILE EN HORIZONTAL*/
+@media only screen and (max-width:1200px) and (orientation:landscape) {
+
+    .header {
+        height: 19vh;
+    }
+
+    .header img {
+        height: 15vh;
+        width: 20vw;
+    }
+
+    .slider {
+        height: 55vh;
+    }
+
+    .slider img {
+        height: 40vh;
+    }
+
+    .mas-paquetes {
+        height: 140vh;
+    }
+
+    .mas-paquetes img {
+        height: 40vh;
+    }
+
+    .footer {
+        height: 25vh;
+    }
+
+    .redes img {
+        width: 3vw;
+        height: 3.5vh;
+    }
+
+    /*SOBRE NOSOTROS*/
+    .sn-caja{
+        display: none;
+    }
+    
+    .sn-caja__texto1{
+        display: none;
+    }
+    
+    .sn-caja__texto2{
+        display: none;
+    }
+    
+    .sn-caja:hover .sn-caja__texto1{
+        display: none;
+    }
+    
+    .sn-caja:hover .sn-caja__texto2{
+        display: none;
+    }
+
+    /*PAQUETE BARILOCHE*/
+    .paquete-bariloche {
+        display: flex;
+        width: 100vw;
+        font-size: 0.6rem;
+    }
+
+
+    .paquete-bariloche__datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+    }
+
+    /*PAQUETE BARILOCHE*/
+    .paquete-bariloche {
+        display: flex;
+        width: 100vw;
+        font-size: 0.6rem;
+    }
+
+
+    .paquete-bariloche__datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+    }
+
+    /*PAQUETE BARILOCHE*/
+    .paquete-ushuaia {
+        display: flex;
+        width: 100vw;
+        font-size: 0.6rem;
+    }
+
+
+    .paquete-ushuaia__datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+    }
+
+    /*PAQUETE USHUAIA*/
+    .paquete-ushuaia {
+        display: flex;
+        width: 100vw;
+        font-size: 0.6rem;
+    }
+
+
+    .paquete-ushuaia__datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+    }
+
+    /*PAQUETE IGUAZÚ*/
+    .paquete-iguazu {
+        display: flex;
+        width: 100vw;
+        font-size: 0.6rem;
+    }
+
+
+    .paquete-iguazu__datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+    }
+
+    /*PAQUETE VILLA LA ANGOSTURA*/
+    .paquete-vlangostura {
+        display: flex;
+        width: 100vw;
+        font-size: 0.6rem;
+    }
+
+
+    .paquete-vlangostura__datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+    }
+
+    
+
+    /*AGENCIAS*/
+    .agencias {
+        height: 120vh;
+    }
+
+    /*CONTACTO*/
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        margin-top: 4vh;
+        align-items: left;
+    }
+
+    .formulario h2 {
+        margin-left: 2vh;
+    }
+
+    .formulario__datos {
+        display: row;
+        flex-wrap: wrap;
+        width: 30vw;
+        padding: 3vw;
+    }
+
+    .formulario__datos input,
+    textarea {
+        margin-top: 1vh;
+        width: 40vw;
+    }
+
+    textarea {
+        height: 20vh;
+    }
+
+    /*TRABAJA CON NOSOTROS*/
+    .trabaja-con-nostoros {
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+
+    .logo__pagina img {
+        width: 30vw;
+        height: 30vh;
+    }
+
+}
+
+/*DISEÑO DESKTOP*/
+@media only screen and (min-width:1200px) {
+    body {
+        background-image: radial-gradient(#92A6F0, #000000e5);
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+
+    .index {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 16vh auto auto 15vh;
+        font-size: 1rem;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .header {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        background-image: radial-gradient(#0f01a8ba, #000000e9);
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 14vh;
+    }
+
+    .header img {
+        width: 14vw;
+        height: 10vh;
+    }
+
+    .barBus {
+        display: flex;
+        margin-right: 2vw;
+    }
+
+    .barBus button {
+        background-color: #92A6F0;
+        border: #92A6F0;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    .barNav {
+        display: inline-block;
+    }
+
+    .barNav li {
+        list-style: none;
+        font-size: 1rem;
+        padding: 2vw;
+        color: #ffffff;
+        display: inline-block;
+        transition: all 0.5s;
+    }
+
+    .barNav li:hover {
+        background-color: #040126ba;
+        border-radius: 0.5vw;
+    }
+
+    .barNav li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .barNav__submenu{
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        position: absolute;
+    }
+    .barNav__submenu:hover > ul{
+        display: flex;
+    }
+
+    .slider {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 60vh;
+        margin-top: 1vh;
+    }
+
+    .slider img {
+        height: 50vh;
+        width: 100vw;
+        margin-top: 2vh;
+        transition: all 0.5s;
+    }
+
+    .slider img:hover {
+        height: 54vh;
+    }
+
+    .mas-paquetes {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        display: flex;
+        width: 100vw;
+        height: 55vh;
+        text-align: center;
+
+    }
+
+    .mas-paquetes__img {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .mas-paquetes img {
+        width: 33vw;
+        height: 40vh;
+        margin-top: 2vh;
+        transition: all 0.5s;
+    }
+
+    .mas-paquetes img:hover {
+        width: 36vw;
+        height: 44vh;
+    }
+
+    .footer {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        background-image: radial-gradient(#0f01a8ba, #000000e9);
+        width: 100vw;
+        height: 17vh;
+    }
+
+    .pieDePagina {
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1vh;
+    }
+
+    .redes__img {
+        margin-top: 1vh;
+    }
+
+    .redes img {
+        width: 1.5vw;
+        height: 2.5vh;
+    }
+
+    .institucional {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1vh;
+    }
+
+    .institucional a {
+        margin-top: 1px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .institucional__opc {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vh;
+        font-size: 0.7rem;
+    }
+
+    .mediosDePagos {
+        display: flex;
+        margin-top: 1vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mediosDePagos img {
+        width: 1.5vw;
+        height: 2vh;
+        margin-top: 1vh;
+    }
+
+    .recibirOfertas {
+        margin-top: 1vh;
+        display: flex;
+        width: 18vw;
+        flex-wrap: wrap;
+        font-size: 0.7rem;
+    }
+
+    .recibirOfertas input {
+        height: 1.8vh;
+        width: 12vw;
+    }
+
+    .recibirOfertas button {
+        height: 2.3vh;
+        width: 3vw;
+        cursor: pointer;
+        font-size: 0.5rem;
+        background-color: #92A6F0;
+        border: #92A6F0;
+        color: #ffffff;
+    }
+
+    small {
+        display: block;
+        margin-top: 2vh;
+        font-size: 0.4rem;
+        text-align: center;
+    }
+
+    /*PAQUETES*/
+    .paquetes {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        font-size: 1rem;
+    }
+
+    .header {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .nav {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        width: 10vw;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: radial-gradient(#0f01a8ba, #000000e9);
+    }
+
+    .nav h3 {
+        margin-top: 2vh;
+    }
+
+    .nav a li {
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+        padding-top: 2vh;
+        transition: all;
+    }
+
+    .nav a li:hover {
+        padding: 3vh;
+        background-color: #040126ba;
+    }
+
+    .pagPaquetes {
+        grid-column: 2 / 4;
+        grid-row: 2 / 4;
+        height: 130vh;
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+    }
+
+    .pagPaquetes img {
+        width: 40vw;
+        height: 40vh;
+        transition: all 0.5s;
+    }
+
+    .footer {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+
+    /*PAQUETE BARILOCHE*/
+    .paquete-bariloche {
+        display: flex;
+        font-size: 1rem;
+    }
+
+    .paquete-bariloche img {
+        height: 50vh;
+        width: 60vw;
+        text-align: center;
+    }
+
+    .paquete-bariloche__imagen {
+        display: flex;
+        justify-content: center;
+        margin-top: 1vh;
+    }
+
+    .paquete-bariloche__datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+
+    /*PAQUETE IGUAZÚ*/
+    .paquete-iguazu {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .paquete-iguazu img {
+        height: 50vh;
+        width: 60vw;
+        text-align: center;
+    }
+
+    .paquete-iguazu__imagen {
+        display: flex;
+        justify-content: center;
+        margin-top: 1vh;
+    }
+
+    .paquete-iguazu__datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+
+    /*PAQUETE USHUAIA*/
+    .paquete-ushuaia {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .paquete-ushuaia img {
+        height: 50vh;
+        width: 60vw;
+        text-align: center;
+    }
+
+    .paquete-ushuaia__imagen {
+        display: flex;
+        justify-content: center;
+        margin-top: 1vh;
+    }
+
+    .paquete-ushuaia__datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+
+    /*PAQUETE VILLA LA ANGOSTURA*/
+    .paquete-vlangostura {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .paquete-vlangostura img {
+        height: 50vh;
+        width: 60vw;
+        text-align: center;
+    }
+
+    .paquete-vlangostura__imagen {
+        display: flex;
+        justify-content: center;
+        margin-top: 1vh;
+    }
+
+    .paquete-vlangostura__datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+
+    /*SOBRE NOSOTROS*/
+    .sobre_nosotros {
+        width: 100vw;
+        height: 84vh;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .sn-caja{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        border-radius:100%;
+        text-align: center;
+        color: black;
+        transform:translate(30px,40px);
+        margin: 0;
+        padding: 0;
+        background-color: #0f01a8ba;
+        position: absolute;
+        color: #fff;
+        font-family:fantasy;
+    }
+
+    .sn-caja__texto1{
+        display: flex;
+    }
+
+    .sn-caja__texto2{
+        display: none;
+    }
+
+    .sn-caja:hover{
+        border-radius: 10%;
+        width:400px;
+        transition: all 0.7s;
+    }
+
+    .sn-caja:hover .sn-caja__texto1{
+        display: none;
+    }
+
+    .sn-caja:hover .sn-caja__texto2{
+        display: flex;
+    }
+
+    .sobre_nosotros h2,
+    h3 {
+        margin-bottom: 2vh;
+    }
+
+    .sobre_nosotros p {
+        margin-bottom: 2vh;
+    }
+
+    .sobre_nosotros__img {
+        display: flex;
+        justify-content: center;
+        width: 40vw;
+        height: 35vh;
+    }
+
+    .sobre_nosotros__img img {
+        width: 20vw;
+        height: 30vh;
+    }
+
+    /*AGENCIAS*/
+    .agencias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 105vh;
+        margin-top: 2vh;
+    }
+
+    .agencias iframe {
+        text-align: center;
+        height: 40vh;
+        width: 80vw;
+        margin-top: 2vh;
+    }
+
+    .agencias__palermo {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+
+    /*CONTACTO*/
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        height: 75vh;
+        margin-top: 4vh;
+    }
+
+    .formulario h2 {
+        margin-left: 2vh;
+    }
+
+    .formulario__datos {
+        display: row;
+        flex-wrap: wrap;
+        width: 30vw;
+        padding: 3vh;
+    }
+
+    .formulario__datos input,
+    textarea {
+        margin-top: 1vh;
+    }
+
+    /*TRABAJA CON NOSOTROS*/
+    .trabaja-con-nostoros {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        height: 110vh;
+        width: 100vw;
+    }
+
+    .logo__pagina {
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+
+    .logo__pagina img {
+        width: 30vw;
+        height: 20vh;
+        margin-bottom: 2vh;
+    }
+
+    .cargar_datos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .cargar_datos input {
+        margin-top: 1vh;
+        font-size: 1rem;
+        width: 20vw;
+    }
+
+    /*PREGUNTAS FRECUENTES*/
+    .preguntas-frecuentes {
+        display: flex;
+        flex-direction: column;
+        height: 78vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .preguntas-frecuentes img {
+        width: 20vw;
+        height: 25vh;
+        margin-bottom: 5vh;
+    }
+
+    .preguntas-frecuentes h4 {
+        margin-bottom: 1.5vh;
+    }
+
+    .preguntas-frecuentes p {
+        margin-bottom: 2.5vh;
+    }
+}
